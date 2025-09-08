@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>top & side navigation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+     body {
+        background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20240919/pngtree-a-background-of-orange-blue-and-yellow-gradients-with-gritty-appearance-image_16233934.jpg);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      nav.topnav{
+        background-color: blanchedalmond;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      nav.topnav a:hover{
+        background-color: rgb(47, 129, 191);
+      }
+    nav.topnav a{
+        display: block;
+    color: black;
+    text-decoration: none;
+    padding: 12px 16px;
+    font-weight: bold;
+    }  
+
+nav.side-nav{
+  background-color: rgb(127, 37, 37);
+     display: flex;
+     top: 50px;
+     left: 0;
+     width: 200px;
+     height: calc(50px);
+     padding-top: 20px;  
+}
+nav.side-nav  a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding:35px;
+    font-weight: bold;
+}
+nav.side-nav a:hover{
+background-color: rgb(104, 161, 161);
+    color: rgb(10, 10, 10);
+    
+}
+.maincontent{
+    margin-top: 50px;
+    margin-left: 150px;
+    padding: 25px;
+
+}
+    </style>
+</head>
+<body>
+    <!--Horizontal Top Navigation-->
+    <nav class="topnav">
+    <a href="#">home</a>
+    <a href="#">projects</a>
+    <a href="#">careers</a>
+    <a href="#">aboutus</a>
+    <a href="#">contact us</a>
+    </nav>
+
+ <!-- Vertical sidebar Navigation-->
+    <nav class="side-nav">
+        <form action="">
+    <a href="#">home</a>
+    <a href="#">projects</a>
+    <a href="#">careers</a>
+     <a href="#">about</a>
+    <a href="#">contact us</a>
+    </nav>
+    </form>
+
+    <div class="maincontent">
+        <h1>Welcome to Dash Board</h1>
+        <p>this section remains visible along the sidebar and below top navigation bar</p>
+    </div>
+
+
+    
+</body>
+</html>
